@@ -14,9 +14,9 @@ class TestStringMethods(unittest.TestCase):
     def test_existance(self):
         try:
             self.assertNotEqual(answer.training, None)
-            qf['trainingExists'] = 'A'
+            qf['trainingExists'] = True
         except:
-            qf['trainingExists'] = 'B'
+            qf['trainingExists'] = False
 
     
     @classmethod
