@@ -15,7 +15,7 @@ class TestStringMethods(unittest.TestCase):
         try:
             columns = sorted(list(answer.training.columns))
             correct = sorted(['Distance', 'Time', 'Aerobic TE', 'Avg HR', 'Max HR', 'Avg Speed', 'Max Speed'])
-            self.assertEqual(columns, collect)
+            self.assertEqual(columns, correct)
             qf['correctColumns'] = True
         except:
             qf['correctColumns'] = False
