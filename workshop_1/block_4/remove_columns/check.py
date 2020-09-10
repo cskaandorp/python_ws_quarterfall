@@ -13,10 +13,12 @@ class TestStringMethods(unittest.TestCase):
     # test to check whether the power is correctly computed
     def test_existance(self):
         try:
-            self.assertNotEqual(answer.training, None)
-            qf['trainingExists'] = True
+            columns = sorted(list(answer.training.columns))
+            correct = sorted(['Distance', 'Time', 'Aerobic TE', 'Avg HR', 'Max HR', 'Avg Speed', 'Max Speed'])
+            self.assertEqual(columns, collect)
+            qf['correctColumns'] = True
         except:
-            qf['trainingExists'] = False
+            qf['correctColumns'] = False
 
     
     @classmethod
