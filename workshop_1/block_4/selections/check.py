@@ -10,17 +10,14 @@ qf = {}
 
 class TestStringMethods(unittest.TestCase):
 
-    # test to check whether the power is correctly computed
-    def test_existance(self):
+    def test_correct_hr(self):
         try:
-            columns = sorted(list(answer.training.columns))
-            correct = sorted(['Distance', 'Time', 'Aerobic TE', 'Avg HR', 'Max HR', 'Avg Speed', 'Max Speed'])
-            self.assertEqual(columns, correct)
-            qf['correctColumns'] = True
+            answ = answer.high_avg_hr
+            self.assertEqual(answ.shape, (7, 8))
+            qf['correctHighAvgHR'] = True
         except:
-            qf['correctColumns'] = False
+            qf['correctHighAvgHR'] = False
 
-    
     @classmethod
     def setUpClass(cls):
         # read the data from QF json file if it exists
