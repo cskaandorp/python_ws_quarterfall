@@ -34,6 +34,18 @@ class TestStringMethods(unittest.TestCase):
         except:
             qf['correctSel1'] = False
 
+    def test_correct_sel_2(self):
+        try:
+            answ = answer.sel_2
+            self.assertEqual(answ.shape, (11, 3))
+
+            indexes = sorted(list(answ.index))
+            self.assertEqual(indexes, list(range(20, 31)))
+            print(indexes)
+            qf['correctSel2'] = True
+        except:
+            qf['correctSel2'] = False
+
     @classmethod
     def setUpClass(cls):
         # read the data from QF json file if it exists
