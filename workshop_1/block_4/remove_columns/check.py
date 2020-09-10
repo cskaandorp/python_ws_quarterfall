@@ -13,8 +13,8 @@ class TestStringMethods(unittest.TestCase):
     # test to check whether the power is correctly computed
     def test_existance(self):
         try:
-            if answer.training == 'hallo':
-                qf['trainingExists'] = 'A'
+            self.assertEqual(answer.training, 'hallo')
+            qf['trainingExists'] = 'A'
         except:
             qf['trainingExists'] = 'B'
 
