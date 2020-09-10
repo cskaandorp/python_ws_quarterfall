@@ -32,7 +32,7 @@ class TestStringMethods(unittest.TestCase):
             print(indexes)
             qf['correctSel1'] = True
         except:
-            qf['correctSel2'] = False
+            qf['correctSel1'] = False
 
     @classmethod
     def setUpClass(cls):
