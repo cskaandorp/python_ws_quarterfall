@@ -15,8 +15,9 @@ class TestStringMethods(unittest.TestCase):
             answ = answer.high_avg_hr
             self.assertEqual(answ.shape, (7, 8))
 
-            indexes = sorted(list(high_avg_hr.index))
+            indexes = sorted(list(answ.index))
             self.assertEqual(indexes, [0, 2, 4, 19, 29, 34, 38])
+            print(indexes)
             qf['correctHighAvgHR'] = True
         except:
             qf['correctHighAvgHR'] = False
