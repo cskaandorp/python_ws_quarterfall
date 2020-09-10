@@ -32,7 +32,6 @@ class TestStringMethods(unittest.TestCase):
         outfile = open('qf.json', 'w')
         json.dump(qf, outfile)
         outfile.close()
-        json_file.close()
 
 if __name__ == '__main__':
     unittest.main()
