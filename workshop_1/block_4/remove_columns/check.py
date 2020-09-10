@@ -6,6 +6,7 @@ import answer
 
 # Quarterfall object containing the data
 qf = {}
+json_file = None
 
 class TestStringMethods(unittest.TestCase):
 
@@ -16,7 +17,7 @@ class TestStringMethods(unittest.TestCase):
             qf['trainingExists'] = True
         except:
             qf['trainingExists'] = False
-            raise
+
     
     @classmethod
     def setUpClass(cls):
@@ -30,6 +31,7 @@ class TestStringMethods(unittest.TestCase):
         # write the qf data to the json file
         outfile = open('qf.json', 'w')
         json.dump(qf, outfile)
+        outfile.close()
 
 if __name__ == '__main__':
     unittest.main()
