@@ -6,7 +6,6 @@ import answer
 
 # Quarterfall object containing the data
 qf = {}
-json_file = None
 
 class TestStringMethods(unittest.TestCase):
 
@@ -25,6 +24,7 @@ class TestStringMethods(unittest.TestCase):
         if os.path.exists('qf.json'):
             json_file = open('qf.json')
             qf = json.load(json_file)
+            json_file.close()
 
     @classmethod
     def tearDownClass(cls):
