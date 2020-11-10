@@ -52,7 +52,7 @@ ADM,Archer-Daniels-Midland Co,Consumer Staples,Agricultural Products,"Chicago, I
 ANET,Arista Networks,Information Technology,Communications Equipment,"Santa Clara, California",2018-08-28 00:00:00,1596532,2004
 AJG,Arthur J. Gallagher & Co.,Financials,Insurance Brokers,"Itasca, Illinois",2016-05-31 00:00:00,354190,1927
 AIZ,Assurant,Financials,Multi-line Insurance,"New York, New York",2007-04-10 00:00:00,1267238,1892
-T,AT&T Inc.,Communication Services,Integrated Telecommunication Services,"Dallas, Texas",1983-11-30 (1957-03-04),732717,1983 (1885)
+T,AT&T Inc.,Communication Services,Integrated Telecommunication Services,"Dallas, Texas",1983-11-30 00:00:00,732717,1983 (1885)
 ATO,Atmos Energy,Utilities,Gas Utilities,"Dallas, Texas",2019-02-15 00:00:00,731802,1906
 ADSK,Autodesk Inc.,Information Technology,Application Software,"San Rafael, California",1989-12-01 00:00:00,769397,1982
 ADP,Automatic Data Processing,Information Technology,Internet Services & Infrastructure,"Roseland, New Jersey",1981-03-31 00:00:00,8670,1949
